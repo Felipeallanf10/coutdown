@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio countdown</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <script defer src="./src/main.js"></script>
+    <script defer src="./src/mask.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img src="./public/bg_top.svg" alt="" />
+    <form method="post" id="form_subscribe">
+      <legend><h2>Inscreva-se</h2></legend>
+      <fieldset>
+        <legend>Nome</legend>
+        <input type="text" maxlength="65" minlength="65" class="input-itens" id="input_text" required />
+      </fieldset>
+      <fieldset>
+        <legend>E-mail</legend>
+        <input
+          type="email"
+          class="input-itens"
+          id=""
+          placeholder=" email@dominio.com"
+          required
+        />
+      </fieldset>
+      <fieldset class="tel">
+        <legend>Telefone</legend>
+        <input type="tel" class="input-itens" placeholder="(##)#####-####" required />
+      </fieldset>
+      <fieldset>
+        <legend>Idade</legend>
+        <input type="date" class="input-itens" id="age" />
+      </fieldset>
+      <button type="submit" id="btn_2">Inscreve-se</button>
+    </form>
+    <main class="container">
+      <div class="group_1">
+        <h1>Ready to launch in...</h1>
+        <ul class="group_2">
+          <li>Dias</li>
+          <li>Horas</li>
+          <li>Minutos</li>
+          <li>Segundos</li>
+        </ul>
+        <div id="countdown"></div>
+        <p>Inscreva-se para saber mais sobre o lançamento</p>
+        <button id="btn_1">Inscreva-se</button>
+      </div>
+
+      <img src="./public/rocket.svg" alt="" />
+    </main>
+    <img src="./public/bg_bottom.svg" id="bottom" />
+    <div class="full"></div>
+  </body>
+</html>
